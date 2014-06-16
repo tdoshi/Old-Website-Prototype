@@ -69,9 +69,9 @@ ActionMailer::Base.delivery_method = :smtp
 ActionMailer::Base.smtp_settings = { 
   :address => "smtp.gmail.com", 
   :port => 587, 
-  :domain => "basmatiraas.herokuapp.com",
-  :user_name => ENV['EMAIL_USERNAME'],
-  :password => ENV['EMAIL_PASSWORD'],
+  :domain => "icaportland.herokuapp.com",
+  :user_name => 'tulsee27@gmail.com'
+  :password => 'rosibelle'
   :autentication => "plain",
   :enable_starttls_auto => true
 }
