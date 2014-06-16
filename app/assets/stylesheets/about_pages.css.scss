@@ -43,7 +43,7 @@ img.bg {
 /*	margin-top: 20%;
 */	margin-top: 20%;
 	font-weight: bold;
-	text-shadow: 1px 1px black;
+	text-shadow: 3px 3px black;
 /*	text-align: left;
 */}
 
@@ -57,7 +57,7 @@ img.bg {
 	width: 100%;
 	text-align: center;
 	position: relative;
-	margin-top: 10%;
+	margin-top: 8%;
 
 }
 
@@ -91,10 +91,11 @@ img.bg {
 }
 
 .fullPage{
-	min-height: 580px;
+	min-height: 680px;
 	width: 100%;
-	padding-bottom: 50px;
-	position: relative;
+	padding-top: 20px;
+/*	padding-bottom: 50px;
+*/	position: relative;
 /*	background: rgba(0, 79, 41, .2);
 */}
 
