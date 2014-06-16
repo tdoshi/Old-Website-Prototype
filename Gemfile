@@ -27,6 +27,11 @@ gem 'jquery-rails'
 
 gem 'rails_12factor', group: :production
 
+gem 'mail_form'
+
+gem 'simple_form'
+
+gem 'figaro'
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 

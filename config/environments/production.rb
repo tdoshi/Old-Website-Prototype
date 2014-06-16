@@ -64,4 +64,16 @@ ICAWebsite::Application.configure do
   # Log the query plan for queries taking more than this (works
   # with SQLite, MySQL, and PostgreSQL)
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
+
+ActionMailer::Base.delivery_method = :smtp 
+ActionMailer::Base.smtp_settings = { 
+  :address => "smtp.gmail.com", 
+  :port => 587, 
+  :domain => "basmatiraas.herokuapp.com",
+  :user_name => ENV['EMAIL_USERNAME'],
+  :password => ENV['EMAIL_PASSWORD'],
+  :autentication => "plain",
+  :enable_starttls_auto => true
+}
+
 end

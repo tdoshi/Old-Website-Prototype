@@ -1,0 +1,32 @@
+// Place all the styles related to the contact controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.fontNormal label {
+	font-size: 13px;
+}
+
+.fontNormal{
+	margin-top: 2%;
+	margin-left: 10%;
+}
+
+.contactform{
+	margin-left: 20%;
+}
+
+.centeredImage {
+	display:block;
+  margin:auto;
+  vertical-align: middle;
+  margin-top: 35px;
+}
+
+.contactImage {
+	width: 500px;
+}
+
+.contactText{
+	padding-top: 3%;
+}
