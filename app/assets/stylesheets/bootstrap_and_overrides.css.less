@@ -1,0 +1,102 @@
+@import "twitter/bootstrap/bootstrap";
+@import "twitter/bootstrap/responsive";
+
+.btn-block{
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 25px;
+	background: transparent;
+	width: 50%;
+	line-height: 1.3em;
+	border: none;
+	margin-top: auto;
+	margin-bottom: auto;
+	color: white;
+}
+
+.nav li a{
+	font-size: 18px;
+	font-family: sans-serif;
+}
+
+.nav-tabs li a:hover{
+ 	border-color: transparent;
+}
+
+.nav-tabs .active a:hover{
+	border: none;
+}
+
+.nav-tabs .active a{
+	border: none;
+}
+
+.nav-tabs:hover{
+	outline: 0;
+	-webkit-appearance:none;
+}
+
+.nav{
+	height: 45px;
+	padding-top: 10px;
+	outline: 0;
+	float: none;
+    display:inline-block;
+}
+
+.nav-tabs {
+    text-align:center;
+}
+
+.navbar-inverse .navbar-inner{
+	height: 55px;
+	border-bottom-right-radius: 0px;
+	border-bottom-left-radius: 0px;
+	border-top-right-radius: 0px;
+	border-top-left-radius: 0px;
+}
+
+.centered-pills { text-align:center; }
+.centered-pills ul.nav, .centered-pills ul.nav { display:inline-block; }
+.centered-pills ul.nav li, .centered-pills ul.nav li { display:inline; }
+
+/*.navbar .navbar-inner{
+	height: 60px;
+}*/
+
+.navbar-wrapper{
+	margin-top: 0px;
+}
+
+.navbar{
+	margin-bottom: 0px;
+}
+
+
+// Set the correct sprite paths
+@iconSpritePath: image-url("twitter/bootstrap/glyphicons-halflings.png");
+@iconWhiteSpritePath: image-url("twitter/bootstrap/glyphicons-halflings-white.png");
+
+// Set the Font Awesome (Font Awesome is default. You can disable by commenting below lines)
+@fontAwesomeEotPath: asset-url("fontawesome-webfont.eot");
+@fontAwesomeEotPath_iefix: asset-url("fontawesome-webfont.eot?#iefix");
+@fontAwesomeWoffPath: asset-url("fontawesome-webfont.woff");
+@fontAwesomeTtfPath: asset-url("fontawesome-webfont.ttf");
+@fontAwesomeSvgPath: asset-url("fontawesome-webfont.svg#fontawesomeregular");
+
+// Font Awesome
+@import "fontawesome/font-awesome";
+
+// Glyphicons
+//@import "twitter/bootstrap/sprites.less";
+
+// Your custom LESS stylesheets goes here
+//
+// Since bootstrap was imported above you have access to its mixins which
+// you may use and inherit here
+//
+// If you'd like to override bootstrap's own variables, you can do so here as well
+// See http://twitter.github.com/bootstrap/customize.html#variables for their names and documentation
+//
+// Example:
+// @linkColor: #ff0000;

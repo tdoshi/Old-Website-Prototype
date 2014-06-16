@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>India Cultural Association</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+  <%= favicon_link_tag '/assets/ica_logo.png', :rel => 'icon', :type => 'image/png' %>
+</head>
+<body>
+
+<%= yield %>
+<div class="navbar navbar-inverse navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+      <div class="nav-collapse centered_pills">
+        <ul class="nav">
+         	<li class="<%= 'active' if current_page?('/') %> dropdown divider-vertical"><%= link_to "Home", controller: "about_pages", action: "home" %></li>
+			<li class="<%= 'active' if current_page?('/#about') %> dropdown divider-vertical"><a href="/#about">About</a></li>
+<!--         <%= link_to "About Us", controller: "about_pages", action: "about"%></li>
+ -->			<li class="<%= 'active' if current_page?('/about_pages/india_festival') %> dropdown divider-vertical"><a href="/#indiafest">India Festival</a></li>
+			<li class="<%= 'active' if current_page?('/sponsors') %> dropdown divider-vertical"><a href="/#sponsors">Our Sponsors</a></li>
+			<li class="<%= 'active' if current_page?('/contact') %> dropdown divider-vertical"><%= link_to "Contact Us", controller: "about_pages", action: "home" %></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

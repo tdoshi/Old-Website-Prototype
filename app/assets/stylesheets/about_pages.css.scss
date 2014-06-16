@@ -1,0 +1,189 @@
+// Place all the styles related to the about_pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+img.bg {
+	opacity: .9;
+  /* Set rules to fill background */
+  min-height: 90%;
+  min-width: 1024px;
+	
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: 100%;
+	
+  /* Set up positioning */
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.mainPage{
+	position: relative;
+	margin-top: 5%;
+	color: black;
+	font-size: 64px;
+	font-family: CodeBold;
+}
+
+.portland{
+	position: relative;
+/*	margin-left: 42%;
+*/	color: black;
+	font-weight: bold;
+	font-size: 30px;
+	font-family: CodeLight
+}
+
+.indiaFest{
+/*	margin-left: 42%;
+*/	color: white;
+	font-size: 30px;
+	font-family: CodeBold;
+/*	margin-top: 20%;
+*/	margin-top: 20%;
+	font-weight: bold;
+	text-shadow: 1px 1px black;
+/*	text-align: left;
+*/}
+
+.mainText{
+	font-family: "Crimson Text", sans-serif;
+	display: inline-block;
+	width: 100%;
+	background: rgba(255, 255, 255, 0.6);
+	padding-bottom: 25px;
+	color: #333333;
+	width: 100%;
+	text-align: center;
+	position: relative;
+	margin-top: 10%;
+
+}
+
+.pageTitle{
+	font-family: "Crimson Text", sans-serif;
+	display: inline-block;
+	width: 80%;
+/*	background: rgba(0, 84, 43, .9);
+*/	background: rgba(181, 73, 25, .9);
+	padding-bottom: 25px;
+	color: #333333;
+	width: 100%;
+	text-align: center;
+	position: relative;
+/*	border-radius: 20px;
+*/	box-shadow: 1px 3px 4px rgba(0,0,0,.5);
+}
+
+.pageTitleText{
+/*	margin-left: 5%;
+*/	color: white;
+}
+
+.rowElems{
+/*	margin-top: 20%;*/
+	background: rgba(5, 5, 5, .6);
+}
+
+.mainButton{
+	height: 50%;
+}
+
+.fullPage{
+	min-height: 580px;
+	width: 100%;
+	padding-bottom: 50px;
+	position: relative;
+/*	background: rgba(0, 79, 41, .2);
+*/}
+
+.aboutText{
+	width: 50%;
+/*	text-align: center;
+*/	margin-top: 3%;
+	font-size: 18px;
+	vertical-align: middle;
+/*	opacity: .8;
+*//*	background: white;
+*/}
+
+.centeredImage {
+	display:block;
+  margin:auto;
+  vertical-align: middle;
+  margin-top: 35px;
+}
+
+.contactImage {
+	width: 500px;
+}
+
+.largeText{
+	text-align: center;
+	font-size: 25px;
+	opacity: .7;
+	margin-top: 3%;
+}
+
+.subTitle{
+	font-weight: bold;
+	font-size: 20px;
+	opacity: 1;
+}
+
+.subText{
+	text-align: left;
+	margin-top: 2%;
+}
+
+.smallImage{
+	width: 300px;
+	height: 200px;
+}
+
+.circular {
+	width: 200px;
+	height: 200px;
+	box-shadow: 10px;
+	border-radius: 150px;
+}
+
+.imgWrap {
+	position: relative;
+}
+
+.imgDescription {
+  text-transform: uppercase;
+  font: bold 22px Helvetica;
+  color: black;
+  visibility: hidden;
+  position: absolute;
+  top: 40%;
+  left: 20%;
+  right: 50%;
+  text-align: center;
+}
+
+.imgWrap:hover .circular{
+  opacity: 0.2;
+}
+
+.imgWrap:hover .imgDescription {
+  visibility: visible;
+  opacity: 0.9;
+}
+
+.table th, .table td { 
+  border-top: none; 
+  text-align: center;
+}
+
+.table{
+	margin-top: 2%;
+	border-top: none;
+}
+
+.table tr{
+	border-top: none;
+}
