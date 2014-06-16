@@ -10,10 +10,10 @@
 			<p class = "indiaFest"> India Festival 2014</p>
 			<div class = "row-fluid rowElems">
 				<div class="span4 pagination-centered">
-					<a class= "btn btn-block mainButton" role = "button" href = "https://docs.google.com/forms/d/1zenGc8qwGK9LLCVFSz7tmPuFnvfxvG7l_eP2JbJAhwM/viewform">Register to Perform</a>
+					<a class= "btn btn-block mainButton" role = "button" href = "http://icaportland.org/if2014registration/">Register to Perform</a>
 				</div>
 				<div class="span4 pagination-centered">
-					<a class= "btn btn-block mainScreen" role = "button" href = "#">Essay&Art Competitons</a>
+					<a class= "btn btn-block mainScreen" role = "button" href = "/essay">Essay&Art Competitons</a>
 				</div>
 				<div class="span4 pagination-centered">
 					<a class= "btn btn-block mainScreen" role = "button" href = "http://icaportland.org/wp-content/uploads/2014/05/if2014sponsorship.pdf">Sponsor the Festival</a>
@@ -28,11 +28,11 @@
 	</div>
 	<div class = "container aboutText span7">
 		<hr>
-		<p> The India Cultural Association (ICA) is a non-profit organization dedicated to enhancing Indian Cultural Awareness in Portland, Oregon. The Association was established in 1980, and has since brought the entire Indian community together, and provided a venue for a population of over 10,000 to reconnect with it's roots.</p>
+		<p> The India Cultural Association (ICA) is a non-profit organization dedicated to enhancing Indian Cultural Awareness in Portland, Oregon. The Association was established in 1980, and has since brought the entire Indian community together and provided a venue for a population of over 10,000 to reconnect with its roots.</p>
 		<br>
-		<p> ICA's claim to fame is it's largest and most-loved event -- The India Festival. The festival is filled with the tastes, sights, and sounds of India, with live music, dance, food and entertainment thoughout the day! The festival brings over 8,000 visitors to Portland's Pioneer Square, and never fails to delight with its non-stop entertainment. </p>
+		<p> ICA's claim to fame is its largest and most-loved event -- The India Festival. The festival is filled with the tastes, sights, and sounds of India - with live music, dance, food and entertainment thoughout the day! The festival brings over 8,000 visitors to Portland's Pioneer Square, and never fails to delight with its non-stop entertainment. </p>
 		<br>
-		<p>We at ICA are so thankful to the Portland community for making our organization what it is today. If you would like to learn more about us or leave a message, please look to our "Contact Us" page!</p>
+		<p>We at ICA are so thankful to the Portland community for making our organization what it is today. We hope to see you at this year's India Festival!</p>
 		<hr>
 	</div>
 	<div class = "container span5 aboutText">
@@ -58,14 +58,14 @@
 		<div class = "container span3 pagination-centered">
 			<p class = "subTitle">Perform</p>
 			<img class="smallImage" src="/assets/pic1.jpg">
-			<p class = "subText">Performers can register online until July 25th, 2014. Auditions will be held on August 3, 2014 at the Beaverton Activity Center.</p>
+			<p class = "subText">Performers can <a href = "http://icaportland.org/if2014registration/">register online</a> until <b>July 25th, 2014</b>. Auditions will be held on August 3, 2014 at the Beaverton Activity Center.</p>
 			<p class = "subText">Practice makes perfect and this year’s program will concentrate on quality. Committee members will determine performance time slots based on performance during the audition. We encourage all of you to start practicing for this fun filled day now and show us your talent during our auditions.</p>
 		</div>
 		<div class = "container span4 pagination-centered">
 			<p class = "subTitle">Sponsor</p>
 			<img class="smallImage" src="/assets/booths.jpg">
 			<p class = "subText">Your business can gain exposure to well over 10,000 visitors from the Northwest South Asian community and Portland community at-large by being present at India Festival.</p>
-			<p class = "subText">If you are interested in supporting India Festival, please read the sponsorship and booth rental details. For additional questions, please contact Jaisen Mody at (503) 645-7902 or email jaisen.mody@gmail.com. Thanks!</p>
+			<p class = "subText">If you are interested in supporting India Festival, please read the <a href = "http://icaportland.org/wp-content/uploads/2014/05/if2014sponsorship.pdf">sponsorship and booth rental details</a>. For additional questions, please contact Jaisen Mody at (503) 645-7902 or email jaisen.mody@gmail.com. Thanks!</p>
 		</div>
 	</div>
 </div>
@@ -105,55 +105,3 @@
 		</table>
 	</div>
 </div>
-
-<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
-<script type="text/javascript">
-$(document).ready(function(){
-                $(".contactLink").click(function(){
-                    if ($("#contactForm").is(":hidden")){
-                        $("#contactForm").slideDown("slow");
-                    }
-                    else{
-                        $("#contactForm").slideUp("slow");
-                    }
-                });
-            });
-            function closeForm(){
-                $("#messageSent").show("slow");
-                setTimeout('$("#messageSent").hide();$("#contactForm").slideUp("slow")', 2000);
-           }
-
-$(document).ready(function() {
-  function filterPath(string) {
-    return string
-      .replace(/^\//,'')
-      .replace(/(index|default).[a-zA-Z]{3,4}$/,'')
-      .replace(/\/$/,'');
-  }
-  $('a[href*=#]').each(function() {
-    if ( filterPath(location.pathname) == filterPath(this.pathname)
-    && location.hostname == this.hostname
-    && this.hash.replace(/#/,'') ) {
-      var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
-      var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
-       if ($target) {
-         var targetOffset = $target.offset().top;
-         $(this).click(function() {
-           $('html, body').animate({scrollTop: targetOffset}, 1000);
-           var d = document.createElement("div");
-        d.style.height = "101%";
-        d.style.overflow = "hidden";
-        document.body.appendChild(d);
-        window.scrollTo(0,scrollToM);
-        setTimeout(function() {
-        d.parentNode.removeChild(d);
-            }, 10);
-           return false;
-         });
-      }
-    }
-  });
-});
-/*! Smooth Scroll - v1.4.5 - 2012-07-22
-* Copyright (c) 2012 Karl Swedberg; Licensed MIT, GPL */
-</script>
