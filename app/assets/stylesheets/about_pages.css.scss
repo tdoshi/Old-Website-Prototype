@@ -3,8 +3,8 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 img.bg {
-	opacity: .9;
-  /* Set rules to fill background */
+/*	opacity: .8;
+*/  /* Set rules to fill background */
   min-height: 90%;
   min-width: 1024px;
 	
@@ -24,6 +24,8 @@ img.bg {
 	color: black;
 	font-size: 64px;
 	font-family: CodeBold;
+	/*font-family: 'Raleway', sans-serif;
+	font-weight: bold;*/
 }
 
 .portland{
@@ -32,7 +34,8 @@ img.bg {
 */	color: black;
 	font-weight: bold;
 	font-size: 30px;
-	font-family: CodeLight
+/*	font-family: 'Raleway', sans-serif;
+*/	font-family: CodeLight
 }
 
 .indiaFest{
@@ -52,12 +55,14 @@ img.bg {
 	display: inline-block;
 	width: 100%;
 	background: rgba(255, 255, 255, 0.6);
-	padding-bottom: 25px;
+/*	background: rgba(14, 101, 190, 0.9);
+*/	padding-bottom: 40px;
+	padding-top: 20px;
 	color: #333333;
 	width: 100%;
 	text-align: center;
 	position: relative;
-	margin-top: 8%;
+	margin-top: 3%;
 
 }
 

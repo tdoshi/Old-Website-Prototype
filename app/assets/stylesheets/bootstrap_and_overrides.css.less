@@ -23,8 +23,13 @@
 	font-family: sans-serif;
 }
 
+.nav-tabs{
+	background-color: transparent;
+}
+
 .nav-tabs li a:hover{
  	border-color: transparent;
+ 	background-color: transparent;
 }
 
 .nav-tabs .active a:hover{
@@ -52,12 +57,34 @@
     text-align:center;
 }
 
+.navbar-inner{
+    background:transparent;
+}
+
 .navbar-inverse .navbar-inner{
+	background:transparent;
 	height: 55px;
 	border-bottom-right-radius: 0px;
 	border-bottom-left-radius: 0px;
 	border-top-right-radius: 0px;
 	border-top-left-radius: 0px;
+	color:black;
+	border-bottom-width: 0px;
+}
+
+.navbar-inverse .divider-vertical{
+	border-left-color: transparent;
+	border-right-color: transparent;
+}
+
+
+.navbar-inverse .brand, .navbar-inverse .nav > li > a{
+	/*color: white;
+	text-shadow: .8px .8px .8px black;*/
+	color: black;
+	text-shadow: none;
+	font-weight: bold;
+	font-family: 'Raleway', sans-serif;
 }
 
 .centered-pills { text-align:center; }
