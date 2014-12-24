@@ -3,8 +3,6 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 img.bg {
-/*	opacity: .8;
-*/  /* Set rules to fill background */
   min-height: 90%;
   min-width: 1024px;
 	
@@ -24,18 +22,14 @@ img.bg {
 	color: black;
 	font-size: 64px;
 	font-family: CodeBold;
-	/*font-family: 'Raleway', sans-serif;
-	font-weight: bold;*/
 }
 
 .portland{
 	position: relative;
-/*	margin-left: 42%;
-*/	color: black;
+	color: black;
 	font-weight: bold;
 	font-size: 30px;
-/*	font-family: 'Raleway', sans-serif;
-*/	font-family: CodeLight
+	font-family: CodeLight
 }
 
 .indiaFest{
@@ -51,12 +45,10 @@ img.bg {
 */}
 
 .mainText{
-	font-family: "Crimson Text", sans-serif;
 	display: inline-block;
 	width: 100%;
 	background: rgba(255, 255, 255, 0.6);
-/*	background: rgba(14, 101, 190, 0.9);
-*/	padding-bottom: 40px;
+	padding-bottom: 40px;
 	padding-top: 20px;
 	color: #333333;
 	width: 100%;
@@ -66,24 +58,14 @@ img.bg {
 
 }
 
-.pageTitle{
-	font-family: "Crimson Text", sans-serif;
-	display: inline-block;
-	width: 80%;
-/*	background: rgba(0, 84, 43, .9);
-*/	background: rgba(181, 73, 25, .9);
-	padding-bottom: 25px;
-	color: #333333;
-	width: 100%;
-	text-align: center;
-	position: relative;
-/*	border-radius: 20px;
-*/	box-shadow: 1px 3px 4px rgba(0,0,0,.5);
-}
-
 .pageTitleText{
-/*	margin-left: 5%;
-*/	color: white;
+	color: black;
+	position: relative;
+	margin-top: 5%;
+	color: black;
+	font-size: 30px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold;
 }
 
 .rowElems{
@@ -96,7 +78,7 @@ img.bg {
 	height: 50%;
 }
 
-.fullPage{
+.full{
 	min-height: 680px;
 	width: 100%;
 	padding-top: 20px;
@@ -109,17 +91,57 @@ img.bg {
 	width: 50%;
 /*	text-align: center;
 */	margin-top: 3%;
-	font-size: 18px;
+	font-size: 20px;
 	vertical-align: middle;
 /*	opacity: .8;
 *//*	background: white;
 */}
 
+.linebreak{
+	width: 60%;
+	margin:auto;
+	text-align: center;
+}
+
+.tile{
+	height: 200px;
+	width: 200px;
+	display: inline-block;
+	margin: 4px;
+	box-shadow: 1px 1px 1px #bbb;
+	background-color: #f7f7f7;
+	padding: 10px;
+	border-radius: 150px;
+
+}
+
+.tile img{
+	width: 180px;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	display: block;
+	margin: auto;
+}
+
+.line{
+	display: inline-block;
+	margin: 20px 0 0 0;
+	height: 1.5px;
+	width: 30%;
+	background: #DEE1E3;
+}
+
+.chakra{
+	height: 40px;
+	width: 40px;
+}
+
 .centeredImage {
 	display:block;
   margin:auto;
   vertical-align: middle;
-  margin-top: 35px;
+  margin-top: 100px;
 }
 
 .contactImage {
@@ -142,6 +164,7 @@ img.bg {
 .subText{
 	text-align: left;
 	margin-top: 2%;
+	font-size: 15px;
 }
 
 .smallImage{

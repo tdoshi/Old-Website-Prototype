@@ -7,6 +7,14 @@
   <%= csrf_meta_tags %>
   <%= favicon_link_tag '/assets/ica_logo.png', :rel => 'icon', :type => 'image/png' %>
   <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,600,700,500,800' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <%= javascript_include_tag "jquery.fullPage" %>
+  <script type="text/javascript">
+    $(document).ready(function() {
+       $('#fullpage').fullpage();
+    });
+  </script>
 </head>
 <body>
 
