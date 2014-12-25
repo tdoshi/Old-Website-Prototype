@@ -7,14 +7,6 @@
   <%= csrf_meta_tags %>
   <%= favicon_link_tag '/assets/ica_logo.png', :rel => 'icon', :type => 'image/png' %>
   <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,600,700,500,800' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <%= javascript_include_tag "jquery.fullPage" %>
-  <script type="text/javascript">
-    $(document).ready(function() {
-       $('#fullpage').fullpage();
-    });
-  </script>
 </head>
 <body>
 
@@ -29,11 +21,10 @@
       </a>
       <div class="nav-collapse centered_pills">
         <ul class="nav">
-         	<li class="dropdown divider-vertical"><%= link_to "HOME", controller: "about_pages", action: "home" %></li>
-			<li class="<%= 'active' if current_page?('/#about') %> dropdown divider-vertical"><a href="/#about">ABOUT</a></li>
-<!--         <%= link_to "About Us", controller: "about_pages", action: "about"%></li>
- -->			<li class="<%= 'active' if current_page?('/about_pages/india_festival') %> dropdown divider-vertical"><a href="/#indiafest">INDIA FESTIVAL</a></li>
-			<li class="<%= 'active' if current_page?('/sponsors') %> dropdown divider-vertical"><a href="/#sponsors">SPONSORS</a></li>
+         	<li class="<%= 'active' if current_page?('/') %> dropdown divider-vertical"><%= link_to "HOME", controller: "about_pages", action: "home" %></li>
+			   <li class="<%= 'active' if current_page?('/#about') %> dropdown divider-vertical"><a href="/#about">ABOUT</a></li>
+       			<li class="<%= 'active' if current_page?('/#indiafest') %> dropdown divider-vertical"><a href="/#indiafest">INDIA FESTIVAL</a></li>
+			<li class="<%= 'active' if current_page?('/#sponsors') %> dropdown divider-vertical"><a href="/#sponsors">SPONSORS</a></li>
 			<li class="<%= 'active' if current_page?('/contact/new') %> dropdown divider-vertical"><%= link_to "CONTACT", controller: "contact", action: "new" %></li>
         </ul>
       </div>

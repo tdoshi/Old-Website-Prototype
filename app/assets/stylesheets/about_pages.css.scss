@@ -111,17 +111,26 @@ img.bg {
 	box-shadow: 1px 1px 1px #bbb;
 	background-color: #f7f7f7;
 	padding: 10px;
-	border-radius: 150px;
+	border-radius: 50px;
 
 }
 
+.tile:hover{
+	background-color: rgba(251, 162, 119, .4);
+}
+
 .tile img{
-	width: 180px;
+	width: 150px;
 	position: relative;
 	top: 50%;
 	transform: translateY(-50%);
 	display: block;
 	margin: auto;
+}
+
+.sponsor{
+	position: absolute;
+	padding: 50px;
 }
 
 .line{
@@ -202,20 +211,6 @@ img.bg {
 .imgWrap:hover .imgDescription {
   visibility: visible;
   opacity: 0.9;
-}
-
-.table th, .table td { 
-  border-top: none; 
-  text-align: center;
-}
-
-.table{
-	margin-top: 2%;
-	border-top: none;
-}
-
-.table tr{
-	border-top: none;
 }
 
 .linkText{

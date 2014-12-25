@@ -1,19 +1,18 @@
-<div class = "pageTitle">
-	<p class="mainPage pageTitleText contactText">Contact Us!</p>
-</div>
 <div class="container row-fluid contactform">
-	<div class="span4 fontNormal">
+	</br>
+	<p class="pageTitleText">Contact Us!</p>
+	<div class="span3 fontNormal">
 		<%= simple_form_for Contact.new, url: {action: "create"} do |f| %>
 			<%= f.label :Name %><%= f.text_field :name, :class => "input-xlarge" %><br />
 			<%= f.label :Email %><%= f.text_field :email, :class => "input-xlarge" %><br />
 			<%= f.label :Subject %><%= f.select(:inquiry, options_for_select(["Involvement", "Sponsorship", "Performance", "Feedback", "Other"]), :class => "input-xlarge")%><br>
 
-			<%= f.label :Message %><%= f.text_area :message, :rows => "15", :class => "input-xlarge" %><br />
+			<%= f.label :Message %><%= f.text_area :message, :rows => "10", :class => "input-xlarge" %><br />
 		    <%= f.submit "Submit"%>
 		<% end %>
 	</div>
 <div class="span4">
-<img class="centeredImage contactImage" src="/assets/background6.png">
+<img class="imageC contactImage" src="/assets/background6.png">
 <br>
 <p>For this festival to continue to be a success, we need your support. We would love to hear from you!</p>
 <p>Please do not hesitate to send us thoughts, questions, comments, or hesitations. We will attempt to respond as soon as possible.</p>
