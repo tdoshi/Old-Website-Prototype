@@ -7,6 +7,17 @@
   <%= csrf_meta_tags %>
   <%= favicon_link_tag '/assets/ica_logo.png', :rel => 'icon', :type => 'image/png' %>
   <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,600,700,500,800' rel='stylesheet' type='text/css'>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+  <%= javascript_include_tag "jquery.easings.min.js"%>
+  <%= javascript_include_tag "jquery.fullPage.min.js"%>
+  <script type="text/javascript">
+  //   $(document).ready(function() {
+  //     $('#fullpage').fullpage({
+  //       anchors: ['1', '2', '3', '4']
+  //       // anchors: ['home', 'about', 'indiafest', 'sponsors']
+  //     });
+  //   });
+  // </script>
 </head>
 <body>
 
@@ -20,11 +31,11 @@
         <span class="icon-bar"></span>
       </a>
       <div class="nav-collapse centered_pills">
-        <ul class="nav">
-         	<li class="<%= 'active' if current_page?('/') %> dropdown divider-vertical"><%= link_to "HOME", controller: "about_pages", action: "home" %></li>
-			   <li class="<%= 'active' if current_page?('/#about') %> dropdown divider-vertical"><a href="/#about">ABOUT</a></li>
-       			<li class="<%= 'active' if current_page?('/#indiafest') %> dropdown divider-vertical"><a href="/#indiafest">INDIA FESTIVAL</a></li>
-			<li class="<%= 'active' if current_page?('/#sponsors') %> dropdown divider-vertical"><a href="/#sponsors">SPONSORS</a></li>
+        <ul class="nav", id = "menu">
+         	<li data-menuanchor = "1" class="<%= 'active' if current_page?('/') %> dropdown divider-vertical"><%= link_to "HOME", controller: "about_pages", action: "home" %></li>
+			   <li data-menuanchor = "2" class="<%= 'active' if current_page?('/#about') %> dropdown divider-vertical"><a href="/#about">ABOUT</a></li>
+       			<li data-menuanchor = "3" class="<%= 'active' if current_page?('/#indiafest') %> dropdown divider-vertical"><a href="/#indiafest">INDIA FESTIVAL</a></li>
+			<li data-menuanchor = "4" class="<%= 'active' if current_page?('/#sponsors') %> dropdown divider-vertical"><a href="/#sponsors">SPONSORS</a></li>
 			<li class="<%= 'active' if current_page?('/contact/new') %> dropdown divider-vertical"><%= link_to "CONTACT", controller: "contact", action: "new" %></li>
         </ul>
       </div>
